@@ -1,0 +1,563 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 98rem;
+  margin: 0 auto;
+  padding: 0 2.2rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1400;
+  height: 4.4rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(2rem);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 -1rem;
+}
+
+.nav-list-mobile {
+  display: none;
+}
+
+.nav-link {
+  font-size: 1.4rem;
+  color: white;
+  padding: 0 1rem;
+  transition: opacity 0.5s;
+}
+
+.nav-link:hover {
+  opacity: 0.7;
+}
+
+.nav-link-apple {
+  width: 1.6rem;
+  background: url("apple.svg") center no-repeat;
+  height: 4.4rem;
+}
+
+.nav-link-search {
+  width: 1.6rem;
+  background: url("search.svg") center no-repeat;
+  height: 4.4rem;
+}
+
+.nav-link-bag {
+  width: 1.4rem;
+  background: url("bag.svg") center no-repeat;
+  height: 4.4rem;
+}
+
+.iphone-14-pro {
+  background: url("hero_iphone14pro__e5xbgo5ffhg2_large.jpg");
+  margin-top: 2.4rem;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  padding-top: 5.5rem;
+}
+
+.title-heading {
+  font-size: 3.6rem;
+  line-height: 1.07143;
+  letter-spacing: -0.005rem;
+}
+
+.title-sub-heading {
+  font-size: 2.65rem;
+  margin-top: 0.6rem;
+  letter-spacing: 0.008rem;
+  font-weight: 400;
+}
+
+.title-paragraph {
+  font-size: 1.7rem;
+  color: black;
+  margin-top: 0.68rem;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 1.8rem;
+}
+
+.cta-link {
+  color: #66bbff;
+  font-size: 2.1rem;
+  display: inline-block;
+}
+
+.cta-link:nth-child(2) {
+  margin-left: 2.6rem;
+}
+
+.cta-link:hover {
+  border-bottom: 2px solid #66bbff;
+}
+
+.iphone-14 {
+  background: url("hero_iphone14_preorder__c4g2wjzuugqe_large.jpg");
+}
+.title-dark {
+  color: black;
+}
+
+.cta-link-darker {
+  color: #0070c9;
+}
+
+.cta-link-darker:hover {
+  border-bottom-color: #0070c9;
+}
+
+.watch {
+  background: url("hero_apple_watch_series_8__bjc1ok5mkjua_large.jpg");
+}
+
+.title-heading-watch {
+  height: 7.8rem;
+  background: url("hero_logo_apple_watch_series_8__ezarmmoobhg2_large.png")
+    center no-repeat;
+  background-size: auto 7.8rem;
+  margin-top: 1.6rem;
+}
+
+.title-paragraph2 {
+  font-size: 2.7rem;
+  color: white;
+  margin-top: 0.68rem;
+}
+
+.watch-se {
+  grid-area: a;
+  background: url("promo_apple_watch_se__f9702l6odgi2_small_2x.jpg");
+}
+
+.title-heading-watch-se {
+  height: 7.8rem;
+  background: url("promo_logo_apple_watch_se__b85vr9ri02gi_large.png") center
+    no-repeat;
+  background-size: auto 7.8rem;
+  margin-top: 1.6rem;
+}
+
+.title-paragraph3 {
+  font-size: 2.7rem;
+  color: black;
+  margin-top: 0.68rem;
+}
+
+.watch-ultra {
+  grid-area: b;
+  background: url("promo_apple_watch_ultra_avail__ddgwll601eie_large.jpg");
+}
+
+.title-heading-watch-ultra {
+  height: 7.8rem;
+  background: url("promo_logo_apple_watch_ultra__ebzaahharnue_large.png") center
+    no-repeat;
+  background-size: auto 7.8rem;
+  margin-top: 1.6rem;
+}
+
+.title-paragraph3 {
+  font-size: 2.7rem;
+  color: black;
+  margin-top: 0.68rem;
+}
+
+.fitness {
+  grid-area: c;
+  background: url("promo-apple-fitness-plus-iphone__bzeal882mv7m_large.jpg");
+}
+
+.title-heading-fitness {
+  height: 7.8rem;
+  background: url("promo_logo_fitness_plus_iphone__dpayetemakq6_large\ \(1\).png")
+    center no-repeat;
+  background-size: auto 3.8rem;
+  margin-top: 1.6rem;
+}
+
+.title-paragraph5 {
+  font-size: 1.7rem;
+  color: black;
+  margin-top: 0.68rem;
+}
+
+.airpods-pro {
+  grid-area: d;
+  background: url("promo_airpods_pro_avail__gaxggskofx6y_large.jpg");
+}
+
+.title-paragraph6 {
+  font-size: 1.7rem;
+  color: white;
+  margin-top: 0.68rem;
+}
+
+.college {
+  grid-area: e;
+  background: url("promo_bts_last_chance__dqftd8sek46e_large.jpg");
+}
+
+.title-paragraph7 {
+  font-size: 1.7rem;
+  color: black;
+  margin-top: 0.68rem;
+}
+
+.title-heading-red {
+  color: red;
+  text-align: center;
+  padding-top: 5.5rem;
+  font-size: 1.7rem;
+}
+
+.card {
+  grid-area: f;
+  background: url("tile__cauwwcyyn9hy_large.jpg");
+}
+
+.title-heading-card {
+  height: 7.8rem;
+  background: url("logo__dcojfwkzna2q_large.png") center no-repeat;
+  background-size: auto 3.8rem;
+  margin-top: 1.6rem;
+}
+
+.title-paragraph8 {
+  font-size: 1.7rem;
+  color: black;
+  margin-top: 0.68rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "a b"
+    "c d"
+    "e f";
+}
+
+/* to make responsive when size is below 1068px */
+@media screen and (max-width: 1068px) {
+  .iphone-14-pro {
+    background: url("hero_iphone14pro__e5xbgo5ffhg2_medium.jpg");
+  }
+
+  .iphone-14 {
+    background: url("hero_iphone14_preorder__c4g2wjzuugqe_medium.jpg");
+  }
+
+  .watch {
+    background: url("hero_apple_watch_series_8__bjc1ok5mkjua_medium.jpg");
+  }
+
+  .watch-se {
+    background: url("promo_apple_watch_se__f9702l6odgi2_medium.jpg");
+  }
+  .watch-ultra {
+    background: url("promo_apple_watch_ultra_avail__ddgwll601eie_medium.jpg");
+  }
+  .fitness {
+    background: url("promo-apple-fitness-plus-iphone__bzeal882mv7m_medium.jpg");
+  }
+  .airpods-pro {
+    background: url("promo_airpods_pro_avail__gaxggskofx6y_medium.jpg");
+  }
+  .college {
+    background: url("promo_bts_last_chance__dqftd8sek46e_medium.jpg");
+  }
+  .card {
+    background: url("tile__cauwwcyyn9hy_medium.jpg");
+  }
+  .hero {
+    height: 65rem;
+    background-size: auto 69.8rem;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+  .title-heading {
+    font-size: 4.4rem;
+  }
+
+  .title-sub-heading {
+    font-size: 2.4rem;
+  }
+
+  .cta-link:nth-child(2) {
+    margin-left: 2rem;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f";
+  }
+}
+
+/* when device goes less than 767px, changes the nav menu to hamburger*/
+@media screen and (max-width: 767px) {
+  header {
+    height: 4.8rem;
+    transition: background 0.36s cubic-bezier(0.32, 0.08, 0.24, 1),
+      height 0.56s cubic-bezier(0.32, 0.08, 0.24, 1);
+  }
+
+  header .container {
+    padding: 0;
+  }
+
+  .iphone-14-pro {
+    margin-top: 4.8rem;
+  }
+
+  .nav-list {
+    margin-top: 0;
+  }
+
+  .nav-list-mobile {
+    display: flex;
+  }
+
+  .nav-item {
+    width: 4.8rem;
+    height: 4.8rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-items-hidden {
+    display: none;
+  }
+
+  .mobile-menu {
+    position: relative;
+    z-index: 1500;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .line {
+    position: absolute;
+    width: 1.7rem;
+    height: 1px;
+    background-color: white;
+    transition: margin-top 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  }
+
+  .line-top {
+    margin-top: 3px;
+  }
+
+  .line-bottom {
+    margin-top: -0.4rem;
+  }
+
+  .active .line-top {
+    margin-top: 0;
+    transform: rotate(45deg);
+    transition: transform 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  }
+  .active .line-bottom {
+    margin-top: 0;
+    transform: rotate(-45deg);
+    transition: transform 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  }
+
+  header.active {
+    height: 100%;
+    background-color: black;
+  }
+
+  .nav-link-apple {
+    width: 1.8rem;
+    height: 4.8rem;
+    position: relative;
+    z-index: 1500;
+  }
+
+  .nav-link-bag {
+    width: 1.6rem;
+    height: 4.8rem;
+    transition: opacity 3s;
+  }
+
+  .nav {
+    position: relative;
+  }
+
+  .nav-link {
+    font-size: 1.7rem;
+    padding: 0;
+    margin: auto 0;
+  }
+
+  .nav-list-larger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    display: block;
+    padding: 10.5rem 5rem;
+    z-index: 1000;
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+  }
+
+  .active .nav-list-larger {
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .active .nav-link-bag {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .nav-list-larger .nav-item {
+    width: 100%;
+    justify-content: flex-start;
+    border-bottom: 2px solid rgba(255, 255, 2550, 0.1);
+  }
+
+  .nav-list-larger .nav-item:nth-child(9) {
+    border-bottom: none;
+  }
+
+  .active .nav-list-larger .nav-item {
+    animation: fade 1s ease-in;
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+/* when device screen is less than 735px */
+@media screen and (max-width: 735px) {
+  .iphone-14-pro {
+    background: url("hero_iphone14pro__e5xbgo5ffhg2_small.jpg");
+  }
+  .iphone-14 {
+    background: url("hero_iphone14_preorder__c4g2wjzuugqe_small.jpg");
+  }
+  .watch {
+    background: url("hero_apple_watch_series_8__bjc1ok5mkjua_small.jpg");
+  }
+  .watch-se {
+    background: url("promo_apple_watch_se__f9702l6odgi2_small.jpg");
+  }
+  .watch-ultra {
+    background: url("promo_apple_watch_ultra_avail__ddgwll601eie_small.jpg");
+  }
+  .fitness {
+    background: url("promo-apple-fitness-plus-iphone__bzeal882mv7m_small.jpg");
+  }
+  .airpods-pro {
+    background: url("promo_airpods_pro_avail__gaxggskofx6y_small.jpg");
+  }
+  .college {
+    background: url("promo_bts_last_chance__dqftd8sek46e_small.jpg");
+  }
+  .card {
+    background: url("tile__cauwwcyyn9hy_small.jpg");
+  }
+  .hero {
+    height: 50rem;
+    background-size: auto 54.8rem;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+
+  .title {
+    padding-top: 3.7rem;
+  }
+
+  .title-heading {
+    padding-top: 3.2rem;
+  }
+  .title-sub-heading {
+    font-size: 1.9rem;
+  }
+
+  .title-heading-watch {
+    margin-top: -0.5rem;
+    margin-bottom: 0;
+  }
+
+  .title-price {
+    font-size: 1.4rem;
+  }
+  .cta {
+    margin-top: 0.7rem;
+  }
+
+  .cta-link {
+    font-size: 1.9rem;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f";
+  }
+}
+.hero {
+  height: 69.2rem;
+  background-size: auto 73.6rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top: 0.6rem solid white;
+  border-bottom: 0.6rem solid white;
+}
